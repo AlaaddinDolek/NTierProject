@@ -1,0 +1,20 @@
+1) Yapýlan incelemelere göre ilgili projenin profesyonel olarak en hafif versiyonda yazýlmasý istendiðinden Proje N-Tier mimari paternine göre yazýlacaktýr..
+
+2) Projede açýlacak katmanlar;
+ENTITIES,
+MAP,
+DAL,
+BLL,
+COMMON (Ortak kullanýlacak sýnýflarýn tutulacaðý katman olacaktýr),
+API - UI (Projemizi dýþarý açmak istediðimiz için açtýðýmýz ayrý bir katmandýr),
+DTO (API' daki esnekliðimizin proje bazlý artmasý için açacaðýmýz katmandýr),
+UI (MVC olarak düþünülmüþtür),
+VM (View Models katmaný)
+
+3) Projede deðiþken isimleri, deðiþkenler local variable olduðu sürece camelCase, field olduðu sürece baþýnda _sembolü olmak üzere camelCase; Property, metot ve class isimleri PascalCase standartlarýnda yazýlacaktýr ve projede Türkçe karakter kullanýlmayacaktýr.. Class isimleri kesinlikle çoðul olmayacaktýr..
+
+4) Katman isimleri Project ile baþlayacak, . sembolünden sonra katmansal takýlarla bitecektir (Project.ENTITIS vs..)
+
+5) Tasarým patternlerinden Generic Repository, Singleton Pattern kesinlikle kullanýlacaktýr.. Mevcut algoritmada bu tasarým patternlerinin dýþýnda bir baþka tasarým patterni öngörülmemektedir.. Ancak projenin esnekliði buna elveriþli taktirde, projenin mimari patterni ile bir çakýþma olmamasý kaydýyla (bu durum özel olarak istenecek olan bir Arge süreci içerisinde hemen belirlenmek zorundadýr) gerekli görülürse rahatça eklenebilecektir..
+
+****************
